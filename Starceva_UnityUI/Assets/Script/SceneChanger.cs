@@ -8,12 +8,17 @@ public class SceneChanger : MonoBehaviour
 
     public void ToFirstScene()
     {
-        SceneManager.LoadScene("FirstScene", LoadSceneMode.Single);
+        SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
     }
 
     public void ToSecondScene()
     {
         SceneManager.LoadScene(1, LoadSceneMode.Single);
+    }
+
+    public void ToThirdScene()
+    {
+        SceneManager.LoadScene(2, LoadSceneMode.Single);
     }
 
     public void Quit()
