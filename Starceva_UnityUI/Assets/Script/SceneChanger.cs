@@ -1,28 +1,38 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-
     public void ToFirstScene()
     {
-        SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
+        StartCoroutine(ChangeSceneWithDelay("SampleScene", 1f));
     }
 
     public void ToSecondScene()
     {
-        SceneManager.LoadScene(1, LoadSceneMode.Single);
+        StartCoroutine(ChangeSceneWithDelay(1, 1f));
     }
 
     public void ToThirdScene()
     {
-        SceneManager.LoadScene(2, LoadSceneMode.Single);
+        StartCoroutine(ChangeSceneWithDelay(2, 1f));
     }
 
     public void Quit()
     {
         Application.Quit();
+    }
+
+    private IEnumerator ChangeSceneWithDelay(string sceneName, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+    }
+
+    private IEnumerator ChangeSceneWithDelay(int sceneIndex, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(sceneIndex, LoadSceneMode.Single);
     }
 }
