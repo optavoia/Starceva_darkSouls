@@ -4,4 +4,5 @@ Unity 2D projekts, kas demonstrē UI elementu lietojumu
 - Vardu ievadišana
 - Ievadot dzimšanas gadu un aprēķinot spēlētāja vecumu
 - Apģērbt varoni, izmantojot metodi Drag and Drop
-- mainiet apģērba izmēru, izmantojot slider
+- Mainiet apģērba izmēru, izmantojot slider
+- Slēpt un rādīt drēbes
