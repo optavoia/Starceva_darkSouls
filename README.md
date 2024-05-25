@@ -1,13 +1,5 @@
 # DarkSouls
 Unity 2D projekts, kas demonstrē UI elementu lietojumu
-### Iespējas:
-- Vardu ievadišana
-- Ievadot dzimšanas gadu un aprēķinot spēlētāja vecumu
-- Apģērbt varoni
-- Mainīt apģērba izmēru
-- Slēpt un rādīt drēbes
-- Jūs varat lasīt informāciju par varoni
-- Pārslēgties starp divām varoniem
 ### Veicamo darbu saraksts
 - [x] Izstrādāt sākuma ainu no, kuras ir iespējams aizvērt projektu vai izvēlēties uzsākt tēla veidošanas spēli. Nodrošināta iespēja pārslēgties starp projektā iekļautajām ainām
 - [x] Pielietojot teksta ievades laukus, iespējams ievadīt tēla vārdu un dzimšanas gadu (šajā laukā iespējams ievadīt tikai skaitļus)
