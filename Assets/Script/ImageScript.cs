@@ -98,16 +98,4 @@ public class ImageScript : MonoBehaviour
         }
         
     }
-
-    public void changeImage(int index)
-    {
-        if (index == 0)
-            imageHolder.GetComponent<Image>().sprite = spriteArray[0];
-
-        else if (index == 1)
-            imageHolder.GetComponent<Image>().sprite = spriteArray[1];
-
-        else if (index == 2)
-            imageHolder.GetComponent<Image>().sprite = spriteArray[2];
-    }
 }
